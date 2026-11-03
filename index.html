@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!--
+  入口のページ。
+
+  https://n3209.github.io/ は、これを置くまで 404 だった。所有確認のファイル
+  （google23108e95131efc9e.html）だけが入っていた。
+
+  URL を写し間違えた人、ドメインだけで来た人が最初に見る場所なので、
+  **ここから目的のものへ行けること**だけを役目にしている。
+
+  アプリ本体から独立させている。JSを読まず、外部のファイルも読まない。
+  六法が壊れていても、ここは開ける。
+
+  作りは roppo の privacy.html / terms.html に揃えてある。
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="description" content="個人で作った道具を置いています。法令ビューア「六法」はこちらから。">
+<title>N3209</title>
+<style>
+  :root {
+    --bg: #fff; --fg: #1a1a1a; --dim: #555; --line: #e2e2e2;
+    --box: #f6f6f6; --link: #0b5ed7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a; --fg: #e8e8e8; --dim: #a8a8a8; --line: #2e3236;
+      --box: #1e2124; --link: #7db3ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 16px 72px;
+    background: var(--bg); color: var(--fg);
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 16px; line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  h1 { font-size: 20px; line-height: 1.5; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 0 0 6px; }
+  p { margin: 0 0 12px; }
+  .meta { color: var(--dim); font-size: 13px; margin: 0 0 32px; }
+  .card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--box); border: 1px solid var(--line); border-radius: 8px;
+    padding: 18px 20px; margin: 0 0 16px;
+  }
+  .card:hover { border-color: var(--link); }
+  .card h2 { color: var(--link); }
+  .card p { color: var(--dim); font-size: 14px; margin: 0; }
+  .foot {
+    margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 13px;
+  }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>N3209</h1>
+<p class="meta">個人で作った道具を置いています。</p>
+
+<a class="card" href="https://n3209.github.io/roppo/">
+  <h2>六法</h2>
+  <p>ブラウザで使う法令ビューア。法令を端末の中に保存して、通信がなくても読めます。条文へのメモと印、版の切り替え、改正後の引き継ぎ。</p>
+</a>
+
+<p class="foot">
+  六法の
+  <a href="https://n3209.github.io/roppo/privacy.html">プライバシーポリシー</a>
+  ／
+  <a href="https://n3209.github.io/roppo/terms.html">利用規約</a>
+  <br>
+  お問い合わせ：n3209-roppo-dev&#64;googlegroups.com
+</p>
+
+</main>
+</body>
+</html>
